@@ -45,6 +45,20 @@ streamlit run app.py
 Then open http://localhost:8501. On the first visit you will be asked to name the
 school and create the administrator account.
 
+### Deploying publicly (e.g. Streamlit Community Cloud)
+
+Until an administrator exists, the app shows the setup screen to whoever opens it.
+Before sharing a public URL, add a secret so only you can complete setup:
+
+```toml
+# .streamlit/secrets.toml locally, or the app's Secrets settings in the cloud
+setup_code = "choose-a-long-random-code"
+```
+
+Note that Streamlit Community Cloud does not keep files between restarts, so the
+SQLite database there is temporary. For real school use, run the app on a machine
+or server with persistent storage and take regular backups.
+
 ## Data
 
 - Data is stored in `data/school.db` (SQLite). Set the `SMS_DB_PATH` environment
