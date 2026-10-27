@@ -2,3 +2,13 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+
+# Local database and backups contain personal student data
+data/
+*.db
+*.db-wal
+*.db-shm
+
+# Secrets and editor/tool folders
+.streamlit/secrets.toml
+.brud/

@@ -1,0 +1,55 @@
+[client]
+toolbarMode = "minimal"
+
+[server]
+# Uploads are only CSV imports; keep the limit small.
+maxUploadSize = 5
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+baseFontSize = 15
+headingFontWeights = [700, 600, 600, 600, 500, 500]
+baseRadius = "10px"
+buttonRadius = "8px"
+showWidgetBorder = true
+showSidebarBorder = true
+linkUnderline = false
+
+[theme.light]
+primaryColor = "#4338CA"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F4F5FA"
+textColor = "#1F2937"
+borderColor = "#E3E5EE"
+dataframeHeaderBackgroundColor = "#F4F5FA"
+greenColor = "#15803D"
+redColor = "#DC2626"
+blueColor = "#2563EB"
+violetColor = "#7C3AED"
+orangeColor = "#D97706"
+chartCategoricalColors = ["#4338CA", "#0EA5E9", "#16A34A", "#F59E0B", "#DC2626", "#7C3AED", "#64748B"]
+
+[theme.light.sidebar]
+backgroundColor = "#F7F7FC"
+secondaryBackgroundColor = "#ECEDF7"
+
+[theme.dark]
+primaryColor = "#818CF8"
+backgroundColor = "#0F1117"
+secondaryBackgroundColor = "#1A1D29"
+textColor = "#E5E7EB"
+borderColor = "#2A2E3D"
+dataframeHeaderBackgroundColor = "#1A1D29"
+greenColor = "#4ADE80"
+redColor = "#F87171"
+blueColor = "#60A5FA"
+violetColor = "#A78BFA"
+orangeColor = "#FBBF24"
+chartCategoricalColors = ["#818CF8", "#38BDF8", "#4ADE80", "#FBBF24", "#F87171", "#A78BFA", "#94A3B8"]
+
+[theme.dark.sidebar]
+backgroundColor = "#141720"
+secondaryBackgroundColor = "#1F2331"
